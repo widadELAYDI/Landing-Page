@@ -1,0 +1,267 @@
+*,
+ ::before,
+  ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: black;
+  font-family: "Kode Mono", monospace;
+
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    background: #212121;
+}
+nav a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+
+nav li{
+    margin: 0 15px;
+}
+
+@media screen and (max-width: 550px) {
+    nav li {
+        margin: 0 8px;
+    }
+    
+    nav a {
+        font-size: 15px;
+    }
+}
+
+/* Home */
+.hero {
+    height: 700px;
+    background: black;
+    display: flex;
+    overflow: hidden;
+}
+
+.home-left {
+    position: relative;
+    width: 40%;
+    background: #212121;
+    height: 100%;
+    box-shadow:  90px 0 100px 100px #212121;
+}
+
+h1{
+    color: #f1f1f1;
+    font-size: 30px;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    margin-left: 4vw;
+    white-space: nowrap;
+    color: red;
+}
+.hero p {
+    color: #f1f1f1;
+    font-size:15px;
+    width: 600px;
+    margin-left: 4vw;
+    line-height: 1.5;
+}
+
+.btn-hero {
+    display: flex;
+}
+
+.btn-home {
+    font-size: 15px;
+    text-align: center;
+    color: #f1f1f1;
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgb(174, 5, 5);
+}
+
+.btn-home:hover {
+    color: #212121;
+    background: rgb(25, 202, 225);
+    transition: all 0.3s ease;
+}
+
+.b1{
+    margin-left: 8vw;
+}
+
+.b2 {
+    margin-left: 10px;
+}
+
+.home-right {
+    background-image: url(images/im_.png);
+    width: 60%;
+    height: 80%;
+    background-position: 60%;
+}
+
+@media screen and (max-width: 620px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .hero p {
+        font-size: 10px;
+        height: 450px;
+        margin-left: 2vw;
+    }
+
+    .btn-home {
+        font-size: 15px;
+        text-align: center;
+        color: #f1f1f1;
+        padding: 15px;
+        text-decoration: none;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        background: rgb(174, 5, 5);
+    }
+
+    .hero p{
+        font-size: 10px;
+        margin-left: 2vw;
+        margin-bottom: 15px;
+    }
+
+    .b1 {
+        margin-left: 2vw;
+    }
+
+    .b2 {
+        margin-left: 10px;
+    }
+
+    .home-left {
+        box-shadow: 20px 0 100px 100px #000;
+        width: 40%;
+    }
+}
+ /* INFO */
+.section-title{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px 120px;
+    text-transform: uppercase ;
+}
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+    width: 100%;
+    margin: 0 auto;
+    font-size:15px;
+    
+    background: #f1f1f1;
+    position: relative;
+}
+
+.info-card {
+    width: 350px;
+    height: auto;
+    margin: 20px 20px  80px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.container-info-photo img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.info-card h2{
+    color: #333;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px 5px;
+   
+}
+
+.info-card p{
+    color: #333;
+    text-align: center;
+    font-size: 15px;
+    padding: 0 20px 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* TEAM */
+.section-title{
+color: white;
+text-align: center;
+font-size: 50px;
+align-items: center;
+text-align: center;
+padding: 60px 20px 120px;
+text-transform: uppercase ;
+}
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+    width: 100%;
+    margin: 0 auto;
+    font-size:15px;
+    
+    background: #f1f1f1;
+    position: relative;
+}
+
+.info-card {
+    width: 300px;
+    height: 100;
+    margin: 20px 20px  60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.container-info-photo img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.info-card h2{
+    color: #333;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px 5px;
+   
+}
+
+.info-card p{
+    color: #333;
+    text-align: center;
+    font-size: 15px;
+    padding: 0 20px 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
